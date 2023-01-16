@@ -13,8 +13,15 @@ System.Console.WriteLine("Введите второе число число");
 String stringValue1 = Console.ReadLine();
 int number1 = Convert.ToInt32(stringValue1);
 int max = 0;
-if (number>number1){
+int min =0;
+if (number>number1)
+{
     max = number;
+    min = number1;
 }
 else max = number1;
+     min = number;
+
+
 System.Console.WriteLine($"Максимальное число {max}, ");
+System.Console.WriteLine($"Минимальное  число {min}, ");
