@@ -9,7 +9,7 @@
 System.Console.WriteLine("Введите первое число");
 String stringValue = Console.ReadLine();
 int number = Convert.ToInt32(stringValue);
-System.Console.WriteLine("Введите второе число число");
+System.Console.WriteLine("Введите второе число");
 String stringValue1 = Console.ReadLine();
 int number1 = Convert.ToInt32(stringValue1);
 int max = 0;
