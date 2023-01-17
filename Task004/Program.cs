@@ -4,13 +4,22 @@
 // 5 -> 2, 4
 // 8 -> 2, 4, 6, 8
 
-System.Console.WriteLine("Введите число");
+System.Console.WriteLine("Введите число (от 1...N)");
 String stringValue = Console.ReadLine();
 int number = Convert.ToInt32(stringValue);
-int i=-number;
-while(i>number+2)
-i++;
-if (number %2==0){
-    System.Console.WriteLine($"Чётные числа ");
+int i = 1;
+while (number <= 0)
+{
+    Console.WriteLine("Не верно");
+    break;
 }
-else System.Console.WriteLine($"Нечётные числа");
+while (i <= number)
+{
+    if (i % 2 == 0)
+    {
+        Console.Write($"{i} ");
+
+    }
+    i++;
+}
+
