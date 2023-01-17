@@ -4,22 +4,33 @@
 // 5 -> 2, 4
 // 8 -> 2, 4, 6, 8
 
+// System.Console.WriteLine("Введите число (от 1...N)");
+// String stringValue = Console.ReadLine();
+// int number = Convert.ToInt32(stringValue);
+// int i = 1;
+// while (number <= 0)
+// {
+//     Console.WriteLine("Не верно");
+//     break;
+// }
+// while (i <= number)
+// {
+//     if (i % 2 == 0)
+//     {
+//         Console.Write($"{i} ");
+
+//     }
+//     i++;
+// }
+
 System.Console.WriteLine("Введите число (от 1...N)");
 String stringValue = Console.ReadLine();
 int number = Convert.ToInt32(stringValue);
-int i = 1;
-while (number <= 0)
-{
-    Console.WriteLine("Не верно");
-    break;
-}
+int i = 2;
 while (i <= number)
 {
-    if (i % 2 == 0)
-    {
-        Console.Write($"{i} ");
+    Console.Write($"{i} ");
 
-    }
-    i++;
+
+    i+=2;
 }
-
